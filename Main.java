@@ -7,11 +7,18 @@ public class Main
 	public static void main(String[] args)
 	{
     //DECLARATION + INITIALIZATION SECTION
-
+	double initialCents = 168; 
+        int remainingCents = (int)initialCents;
     //CALCULATION SECTION
-
+	int quarters = remainingCents / 25;
+        remainingCents %= 25;
+        int dimes = remainingCents / 10;
+        remainingCents %= 10;
+        int nickels = remainingCents / 5;
+        remainingCents %= 5;
+        int pennies = remainingCents;
     //OUTPUT SECTION
-
+	System.out.println("$"+(initialCents/100)+" can be converted to "+quarters+" quarters, "+dimes+" dimes, "+nickels+" nickels, and "+pennies+" pennies.");
   }
 
 }
