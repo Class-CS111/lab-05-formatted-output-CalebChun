@@ -18,7 +18,7 @@ public class Main
         remainingCents %= 5;
         int pennies = remainingCents;
     //OUTPUT SECTION
-	System.out.println("$"+(initialCents/100)+" can be converted to "+quarters+" quarters, "+dimes+" dimes, "+nickels+" nickels, and "+pennies+" pennies.");
-  }
+    System.out.printf("$%.2f can be converted to %d quarters, %d dimes, %d nickels, and %d pennies.%n",
+                    initialCents/100, quarters, dimes, nickels, pennies);
 
 }
