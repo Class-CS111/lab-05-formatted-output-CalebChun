@@ -18,7 +18,7 @@ public class Main {
         int pennies = remainingCents;
 
         // OUTPUT SECTION
-        System.out.printf("$%.2f can be converted to %d quarters, %d dimes, %d nickels, and %d pennies.%n",
+        System.out.printf("$%.2f can be converted to %d quarters, %d dimes, %d nickels, and %d pennies.",
                           initialCents/100, quarters, dimes, nickels, pennies);
     }
 }
